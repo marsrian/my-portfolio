@@ -1,0 +1,766 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-content {
+  background: #1e1e1e;
+  padding: 60px 0;
+}
+
+.logo {
+  color: #fd6f00;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: #ffffff;
+  font-size: 21px;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+}
+
+.download {
+  padding: 12px 20px;
+  background: #fd6f00;
+}
+/* Hero Section: */
+.hero {
+  max-width: 1200px;
+  margin: 80px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.info {
+  width: 619px;
+}
+
+.name {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.name span {
+  color: #fd6f00;
+}
+
+.name img {
+  margin: 0 8px;
+}
+
+.hero p {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 50%;
+  margin-top: 12px;
+  text-align: justify;
+}
+
+.expert {
+  display: flex;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  /* font-size: 2epx; */
+  font-weight: 300;
+  line-height: 29px;
+  color: white;
+  margin: 24px 0;
+}
+
+.expert img {
+  margin: 0 20px;
+}
+
+.btn {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 8px;
+  width: 300px;
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  width: 330px;
+}
+
+.btn .portfolio {
+  background: #fd6f00;
+  color: white;
+  padding: 10px 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 26px;
+  line-height: 30px;
+  border-radius: 60px;
+  border: 0;
+}
+
+.btn .hire {
+  color: white;
+  font-size: 26px;
+  line-height: 30px;
+  background: transparent;
+  border: 0px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+  gap: 24px;
+}
+
+.social li {
+  list-style: none;
+  font-size: 32px;
+  color: white;
+  opacity: 50%;
+}
+/* Profile Image */
+.box {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  background: #1e1e1e;
+  margin: 0 40px;
+  margin-top: -200px;
+  overflow: hidden;
+}
+.box::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: transparent;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 100px 0 40px #1e1e1e;
+}
+.box::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  border-bottom: 6px solid #b23434;
+
+}
+
+.box .circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 6px solid #b23434;
+}
+.box .circle img,
+.box img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 500px;
+
+}
+
+/***** About Section Start *******/
+.aboutSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 36px 0;
+  font-family: "Roboto", sans-serif;
+}
+.aboutInfo .title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: white;
+}
+.aboutInfo .desc {
+  width: 541px;
+  color: white;
+  opacity: 50%;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 12px;
+}
+.review{
+  text-align: end;
+}
+.review ul {
+  display: flex;
+  gap: 4px;
+  color: #FD853A;
+  font-size: 32px;
+}
+.review ul li {
+  list-style: none;
+}
+.review .experienceYear {
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 47px;
+  color: white;
+  margin-top: 16px;
+}
+.review .expertAbout {
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
+  margin-top: 4px;
+}
+
+/***** About Section End *******/
+
+/***** Main Section Start *******/
+.main {
+  background: #1e1e1e;
+}
+
+/***** Experience Section Start *******/
+.experienceSection {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  background: linear-gradient(
+    to left,
+    rgba(255, 177, 71, 0.1),
+    rgba(255, 108, 99, 0.1),
+    rgba(184, 106, 223, 0.1)
+  );
+}
+.experience {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+}
+.expInfo {
+  width: 459px;
+}
+.experience .title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: italic;
+}
+.experience .subtitle {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+  margin: 12px 0;
+}
+.expDesc {
+  font-size: 18px;
+  line-height: 28px;
+}
+.myExp {
+  width: 582px;
+}
+.myExpDetails {
+  display: flex;
+  justify-content: space-between;
+}
+.myExpDetails .expYear {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: italic;
+}
+.myExpDetails .expRole {
+  font-size: 16px;
+  line-height: 24px;
+}
+.myExp .expName {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  margin: 10px 0;
+}
+/***** Experience Section End *******/
+
+/***** Award Section Start *******/
+.awardSection {
+  max-width: 1200px;
+  margin: 120px auto 0px;
+  font-family: "Rubik", sans-serif;
+}
+.awardSection .title {
+  color: white;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.awardSection .desc {
+  color: white;
+  opacity: 50%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  width: 541px;
+  margin: 24px auto;
+}
+
+.award {
+  background: #000;
+  padding: 40px 80px;
+  color: white;
+  margin-bottom: 40px;
+}
+.awardInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.awardInfo .awardTitle {
+  font-size: 24px;
+  line-height: 28px;
+}
+.awardInfo .awardYear {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+.awardDesc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 50%;
+  margin-top: 20px;
+  width: 663px;
+  text-align: justify;
+}
+/***** Award Section End *******/
+
+/***** My Portfolio Section Start *******/
+.portfolioSection {
+  max-width: 1200px;
+  margin: 120px auto 0px;
+}
+.portfolioTitle {
+  color: white;
+  font-weight: 800;
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+}
+.portfolioDesc {
+  color: white;
+  opacity: 50%;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  width: 541px;
+  margin: 24px auto;
+}
+
+.portfolioSection ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  color: white;
+  margin-top: 40px;
+}
+.portfolioSection ul li {
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  background: #000;
+  padding: 12px 20px;
+}
+.portfolioSection ul .activeTab {
+  background: #fd6f00;
+}
+.worksDesc1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  color: white;
+  align-items: center;
+}
+.design {
+  background-color: #000;
+  width: 520px;
+  height: 334px;
+  padding: 0 20px;
+  overflow: hidden;
+  position: relative;
+}
+.design .landPage {
+  width: 340px;
+  height: 489px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.design .homePage {
+  width: 350px;
+  height: 412px;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+
+.detailsDesc {
+  max-width: 559px;
+}
+.worksDesc2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 40px;
+  color: white;
+  align-items: center;
+}
+
+.detailsDesc .title {
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: italic;
+}
+
+.detailsDesc .subtitle {
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 30px 0;
+}
+
+.worksDetails {
+  opacity: 50%;
+  margin-top: 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+}
+.websiteLink {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-style: italic;
+}
+/***** My Portfolio Section End *******/
+
+/***** Contact Section Start *******/
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 120px;
+  font-family: "Rubik", sans-serif;
+}
+
+.contact .title {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  font-style: italic;
+}
+
+.contact .subtitle {
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+  text-align: center;
+  margin-top: 12px;
+  text-transform: uppercase;
+}
+form {
+  background: rgba(253, 111, 0, 0.1);
+  padding: 40px 80px;
+  margin-top: 40px;
+}
+
+form h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.nameEmail {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.personName {
+  width: 300px;
+  height: 48px;
+  color: white;
+  border: 0;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+}
+.email {
+  width: 300px;
+  height: 48px;
+  color: white;
+  border: 0;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+}
+textarea {
+  width: 300px;
+  height: 48px;
+  border: 0;
+  color: white;
+  border-bottom: 1px solid white;
+  background: transparent;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  outline: none;
+}
+form .file {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+form .file:hover {
+  cursor: pointer;
+}
+input[type="file"] {
+  display: none;
+}
+input[type="submit"] {
+  background: #fd6f00;
+  padding: 12px 36px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 40px;
+  border: none;
+}
+/***** Contact Section End *******/
+
+/***** Footer Section Start *******/
+footer {
+  background: #000;
+  padding-top: 80px;
+}
+
+.footerLogo {
+  color: #fd6f00;
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+  font-size: 21px;
+  line-height: 32px;
+  margin-top: 40px;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer .socialIcon {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+footer .socialIcon li {
+  list-style: none;
+  font-size: 32px;
+  color: white;
+}
+
+.copyright {
+  color: white;
+  background: #121212;
+  font-size: 21px;
+  line-height: 32px;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+.copyright span {
+  font-size: 700;
+  color: #fd6f00;
+}
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 0 16px;
+    margin-top: -40px;
+  }
+  nav ul{
+    display: none;
+  }
+  .hero {
+    padding: 0 8px;
+  }
+  .name {
+    font-size: 20px;
+  }
+  .name .title {
+    margin: 0;
+  }
+  .info{
+    width: 100%;
+  }
+  .expert {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutInfo .title{
+    font-size: 20px;
+    padding: 0 8px;
+  }
+  .aboutInfo .desc {
+    width: 100%;
+    padding: 8px;
+    margin-top: -10px;
+  }
+  .review {
+    text-align: start;
+  }
+  .experienceSection{
+    padding: 0 8px;
+  }
+  .experience{
+    display: flex;
+    flex-direction: column;
+  }
+  .expInfo{
+    width: 100%;
+  }
+  .myExp{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .awardSection{
+    padding: 0 8px;
+  }
+  .award{
+    padding: 12px;
+  }
+  .awardSection .desc{
+    width: 100%;
+  }
+  .awardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: normal
+  }
+  .awardYear{
+    margin-top: 8px;
+  }
+  .awardDesc{
+    width: 100%;
+  }
+  .awardSection .desc {
+    width: 100%;
+  }
+  .portfolioSection{
+    padding: 0 8px;
+  }
+  .portfolioDesc{
+    width: 100%;
+  }
+  .portfolioSection ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .worksDesc1{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .design{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .worksDesc2{
+    display: flex;
+    flex-direction: column-reverse
+  }
+  form h3{
+    font-size: 20px;
+  }
+  .nameEmail{
+    display: flex;
+    flex-direction: column;
+  }
+  .footerLogo{
+    font-size: 20px;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .socialIcon {
+    display: flex;
+    flex-direction: row;
+  }
+}
